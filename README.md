@@ -37,19 +37,18 @@ Permite visualizar y gestionar incidentes y cambios, cumpliendo con KPIs de SLA 
 
 ## 📁 Estructura del proyecto
 
-Proyecto DASHBOARD/
-├── screenshots/             # Capturas del dashboard
-├── web/                     # Aplicación web con Flask
-│   ├── static/              # CSS, JS y assets
-│   ├── templates/           # HTML
-│   ├── app.py               # Aplicación Flask
-│   └── config.py            # Configuración SQL y Firebase
-├── Changes.csv              # Datos de cambios
-├── Incidents.csv            # Datos de incidentes
-├── config.env               # Variables de entorno (.env)
-├── populate_data.py         # Script para poblar SQL Server
-├── export_firestore.py      # Exportación de datos a Firestore
-├── docker-compose.yml       # Levantar SQL Server
+├── screenshots/ # Capturas del dashboard
+├── web/ # Aplicación web con Flask
+│ ├── static/ # CSS, JS y assets
+│ ├── templates/ # HTML
+│ ├── app.py # Aplicación Flask
+│ └── config.py # Configuración SQL y Firebase
+├── Changes.csv # Datos de cambios
+├── Incidents.csv # Datos de incidentes
+├── config.env # Variables de entorno (.env)
+├── populate_data.py # Script para poblar SQL Server
+├── export_firestore.py # Exportación de datos a Firestore
+├── docker-compose.yml # Levantar SQL Server
 └── README.md
 
 ---
