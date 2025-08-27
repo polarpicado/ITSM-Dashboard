@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_docker
+    environment:
+      SA_PASSWORD: "SuperClave!234"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - it_dashboard
+
+networks:
+  it_dashboard:
+    driver: bridge
+    
