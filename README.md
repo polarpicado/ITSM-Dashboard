@@ -37,6 +37,7 @@ Permite visualizar y gestionar incidentes y cambios, cumpliendo con KPIs de SLA 
 
 ## 📁 Estructura del proyecto
 
+<pre>
 ├── screenshots/ # Capturas del dashboard
 ├── web/ # Aplicación web con Flask
 │ ├── static/ # CSS, JS y assets
@@ -50,20 +51,21 @@ Permite visualizar y gestionar incidentes y cambios, cumpliendo con KPIs de SLA 
 ├── export_firestore.py # Exportación de datos a Firestore
 ├── docker-compose.yml # Levantar SQL Server
 └── README.md
+</pre>
 
 ---
 
 ## ⚙️ Configuración
 
 1. Crear archivo `.env` (o renombrar `config.env`) en la raíz de `web/`:
-
+<pre>
 SQL_SERVER=127.0.0.1,1433
 SQL_DATABASE=ITSM_Dashboard
 SQL_USER=sa
 SQL_PASSWORD=SuperClave!234
 FIREBASE_JSON=serviceAccountKey.json
 FIREBASE_API_KEY=tu_api_key_de_firebase
-
+</pre>
 2. Configurar **Firebase**:  
    - Subir `serviceAccountKey.json` en la carpeta `web/`.  
    - Crear usuarios para login o usar los de prueba.  
