@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Incidencia</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Crear Incidencia</h1>
+
+    <!-- Botón de regresar -->
+    <a href="{{ url_for('index') }}" class="btn-back">← Regresar al Dashboard</a>
+
+    <form method="POST">
+        <label for="user_id">Usuario:</label>
+        <select name="user_id" id="user_id" required>
+            {% for u in users %}
+            <option value="{{ u[0] }}">{{ u[1] }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="service_id">Servicio:</label>
+        <select name="service_id" id="service_id" required>
+            {% for s in services %}
+            <option value="{{ s[0] }}">{{ s[1] }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="priority">Prioridad:</label>
+        <input type="text" name="priority" id="priority" required>
+
+        <label for="status">Estado:</label>
+        <input type="text" name="status" id="status" required>
+
+        <button type="submit">Crear Incidencia</button>
+    </form>
+</div>
+</body>
+</html>

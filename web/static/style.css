@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* De arriba a abajo */
+    align-items: center; /* Centra horizontalmente */
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    padding: 20px 0; /* Un poco de espacio arriba y abajo */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 25px;
+    color: #2980b9;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #2980b9;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #1f618d;
+}
+
+.flash {
+    background-color: #ffdddd;
+    color: #d8000c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9; /* azul sólido */
+    color: white;
+    font-weight: 600;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f7f9;
+}
+
+tr:hover {
+    background-color: #d0e7ff; /* azul claro */
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #005fa3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background: #4facfe;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #00f2fe;
+}

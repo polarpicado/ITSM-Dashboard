@@ -1,0 +1,64 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+*.env
+*.log
+
+# ----------------------------
+# Firebase
+# ----------------------------
+serviceAccountKey.json
+*.firebase
+.firebaserc
+
+# ----------------------------
+# Power BI
+# ----------------------------
+*.pbix
+*.pbit
+~$*
+
+# ----------------------------
+# Docker
+# ----------------------------
+*.tar
+*.log
+*.tmp
+docker-compose.override.yml
+.env
+
+# ----------------------------
+# VSCode / IDEs
+# ----------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ----------------------------
+# Sistema
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# Config local
+# ----------------------------
+config.env
+serviceAccountKey.json
+
+# ----------------------------
+# Otros
+# ----------------------------
+*.sqlite3
+*.db
+*.bak
+
